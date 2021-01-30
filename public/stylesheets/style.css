@@ -1,8 +1,48 @@
+@font-face {
+  font-family: robotoRegular;
+  src: url(/fonts/Roboto-Regular.ttf)
+}
+
 body {
+  font: 16px robotoRegular, Helvetica, Arial, sans-serif;
+}
+
+main {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
 }
+
+.checked {
+  color:orange ;
+}
+
+.navi-link {
+  font-size:x-large;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+}
+
+.navi-link:hover {
+  border: solid;
+  border-radius: 10px;
+  border-width: 1px;;
+  color: white;
+  text-decoration: none;
+}
+
+.navi-link:visited {
+  color: #d49f00;
+}
+
+.bg-camera {
+  background-color: #131f28;
+}
+
+.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+

@@ -1,11 +1,176 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1>Camera Shopping Home</h1>
-</body>
-</html>
+<main>
+  <div class="row">
+    <div class="col">
+      <h2>Camera Questions</h2>
+      <div class="card shadow">
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <label for="camerasOwned"><strong>About how many digital cameras have you owned?</strong><span
+                id="outputter" style="margin-left:10px; font-size: larger;"></span></label>
+              <div class="slidecontainer">
+                <span>0</span><input name="camerasOwned" type="range" min="0" max="10" value="0" class="slider"
+                  id="numCamerasOwned"><span>10+</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="experienceLevel"><strong>What is your current experience level with digital photography or
+                  videography?</strong></label><br />
+              <input type="radio" id="novice" name="experienceLevel" value="novice"><label for="novice"
+                style="margin-left:10px;">Novice</label><br />
+              <input type="radio" id="intermediate" name="experienceLevel" value="intermediate"><label for="intermediate"
+                style="margin-left:10px;">Intermediate</label><br />
+              <input type="radio" id="advanced" name="experienceLevel" value="advanced"><label for="advanced"
+                style="margin-left:10px;">Advanced</label><br />
+              <input type="radio" id="professional" name="experienceLevel" value="professional"><label for="professional"
+                style="margin-left:10px;">Professional</label><br />
+            </div>
+            <div class="form-group">
+              <label for="brandPreference"><strong>Do you have a preferred camera brand?</strong></label><br />
+              <input type="radio" id="canon" name="brandPreference" value="canon"><label for="canon"
+                style="margin-left:10px;">Canon</label><br />
+              <input type="radio" id="fujifilm" name="brandPreference" value="fujifilm"><label for="fujifilm"
+                style="margin-left:10px;">Fujifilm</label><br />
+              <input type="radio" id="leica" name="brandPreference" value="leica"><label for="leica"
+                style="margin-left:10px;">Leica</label><br />
+              <input type="radio" id="nikon" name="brandPreference" value="nikon"><label for="nikon"
+                style="margin-left:10px;">Nikon</label><br />
+              <input type="radio" id="olympus" name="brandPreference" value="olympus"><label for="olympus"
+                style="margin-left:10px;">Olympus</label><br />
+              <input type="radio" id="panasonic" name="brandPreference" value="panasonic"><label for="panasonic"
+                style="margin-left:10px;">Panasonic</label><br />
+              <input type="radio" id="pentax" name="brandPreference" value="pentax"><label for="pentax"
+                style="margin-left:10px;">Pentax</label><br />
+              <input type="radio" id="ricoh" name="brandPreference" value="ricoh"><label for="ricoh"
+                style="margin-left:10px;">Ricoh</label><br />
+              <input type="radio" id="samsung" name="brandPreference" value="samsung"><label for="samsung"
+                style="margin-left:10px;">Samsung</label><br />
+              <input type="radio" id="sony" name="brandPreference" value="sony"><label for="sony"
+                style="margin-left:10px;">Sony</label><br />
+              <input type="radio" id="zeiss" name="brandPreference" value="zeiss"><label for="zeiss"
+                style="margin-left:10px;">Zeiss</label><br />
+              <input type="radio" id="noPreference" name="brandPreference" value="noPreference"><label for="noPreference"
+                style="margin-left:10px;">No preference</label><br />
+            </div>
+            <div class="form-group">
+              <label for="typePreference"><strong>Is it important to you to be able to switch out
+                  lenses?</strong></label><br />
+              <input type="radio" id="yes" name="typePreference" value="yes"><label for="yes"
+                style="margin-left:10px;">Yes</label><br />
+              <input type="radio" id="no" name="typePreference" value="no"><label for="no"
+                style="margin-left:10px;">No</label><br />
+              <input type="radio" id="noTypePreference" name="typePreference" value="noTypePreference"><label
+                for="noTypePreference" style="margin-left:10px;">No preference</label><br />
+            </div>
+            <div class="form-group">
+              <label for="priceRange"><strong>About how much are you thinking about spending on a
+                  camera?</strong></label><span id="priceOutputter" style="margin-left:10px; font-size: larger;"></span>
+              <div class="slidecontainer">
+                <span>$100</span><input name="priceRange" type="range" min="100" max="6000" value="500" class="slider"
+                  id="priceRange"><span>$6000</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="frequencyPreference"><strong>How often do you plan on making prints of your
+                  photos?</strong></label><br />
+              <input type="radio" id="frequently" name="frequencyPreference" value="frequently"><label for="frequently"
+                style="margin-left:10px;">Frequently</label><br />
+              <input type="radio" id="semi-frequently" name="frequencyPreference" value="semi-frequently"><label
+                for="semi-frequently" style="margin-left:10px;">Semi-frequently</label><br />
+              <input type="radio" id="occasionally" name="frequencyPreference" value="occasionally"><label
+                for="occasionally" style="margin-left:10px;">Occasionally</label><br />
+              <input type="radio" id="infrequently" name="frequencyPreference" value="infrequently"><label
+                for="infrequently" style="margin-left:10px;">Infrequently</label><br />
+              <input type="radio" id="never" name="frequencyPreference" value="never"><label for="never"
+                style="margin-left:10px;">Never</label><br />
+              <input type="radio" id="noFrequencyPreference" name="frequencyPreference"
+                value="noFrequencyPreference"><label for="noFrequencyPreference" style="margin-left:10px;">Not
+                sure</label><br />
+            </div>
+            <div class="form-group">
+              <label for="displayPreference"><strong>Where will you be displaying photos (check all that
+                  apply)?</strong></label><br />
+              <input type="checkbox" id="client" name="displayPreference" value="client"><label for="client"
+                style="margin-left:10px;">Up to client</label><br />
+              <input type="checkbox" id="social-media" name="displayPreference" value="social-media"><label
+                for="social-media" style="margin-left:10px;">Social media</label><br />
+              <input type="checkbox" id="professional-website" name="displayPreference"
+                value="professional-website"><label for="professional-website" style="margin-left:10px;">Professional
+                website</label><br />
+              <input type="checkbox" id="online-gallery" name="displayPreference" value="online-gallery"><label
+                for="online-gallery" style="margin-left:10px;">Online gallery</label><br />
+              <input type="checkbox" id="ad" name="displayPreference" value="ad"><label for="ad"
+                style="margin-left:10px;">Ad</label><br />
+              <input type="checkbox" id="office-or-home" name="displayPreference" value="office-or-home"><label
+                for="office-or-home" style="margin-left:10px;">Office or home</label><br />
+              <input type="checkbox" id="gallery" name="displayPreference" value="gallery"><label for="gallery"
+                style="margin-left:10px;">Gallery</label><br />
+              <input type="checkbox" id="book-or-magazine" name="displayPreference" value="book-or-magazine"><label
+                for="book-or-magazine" style="margin-left:10px;">Book or magazine</label><br />
+              <input type="checkbox" id="billboard-large-format" name="displayPreference"
+                value="billboard-large-format"><label for="billboard-large-format" style="margin-left:10px;">Billboard or
+                other large format</label><br />
+              <input type="checkbox" id="noDisplayPreference" name="displayPreference" value="noDisplayPreference"><label
+                for="noDisplayPreference" style="margin-left:10px;">Not sure</label><br />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div>
+        <h2>Recommendations</h2>
+      </div>
+      <div class="card shadow">
+        <% let recommendations = [{name: 'Panasonic Lumix G7', picture: 'panasonic_g7.jpg', rating: 4.3, numReviews: 203, infoLink: '/camera/:id', amazon: 'https://www.amazon.com/dp/B00X409TIC/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=ggv0zLK1DfeLbFmJlWyvAg&hsa_cr_id=8949182490001&pd_rd_plhdr=t&pd_rd_r=b9a87d04-1516-439e-8775-9165e5b7a915&pd_rd_w=FLae5&pd_rd_wg=B00kJ&ref_=sbx_be_s_sparkle_mcd_asin_0_img', sampleImages: ['one', 'two']}] %>
+        <% recommendations.forEach(recommendation => { %>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-lg-3">
+              <img src="/images/<%= recommendation.picture %>" style="height:150px; padding: 15px; margin-top: 15px;"
+                class="img-thumbnail">
+            </div>
+            <div class="col-lg-4">
+              <h3><%= recommendation.name %></h3>
+              <span><a href="<%= recommendation.infoLink %>" class="card-link">Camera
+                  Details</a></span><span>&nbsp;|&nbsp;</span><span><a href="<%= recommendation.amazon %>"
+                  class="card-link">See on Amazon</a></span><br /><br />
+              <% for (i = 1; i <= Math.round(recommendation.rating); i++) { %>
+                <span class="fa fa-star checked"></span>
+              <% } %>
+              <% for (i = 1; i <= (5 - Math.round(recommendation.rating)); i++) { %>
+                <span class="fa fa-star"></span>
+              <% } %>
+              <br /><br />
+              <button type="button" class="btn btn-warning">Check Price</button>
+            </div>
+          </div>
+        </div>
+        <% }) %>
+      </div>
+      <div class="text-right" style="margin-top: 20px;">
+        <button type="button" class="btn btn-warning">See All Recommendations</button>
+      </div>
+    </div>
+  </div>
+  
+  
+  <script>
+    const slider = document.getElementById("numCamerasOwned");
+    const output = document.getElementById("outputter");
+    output.innerHTML = slider.value;
+  
+    slider.oninput = function () {
+      output.innerHTML = this.value;
+    }
+  
+    const priceSlider = document.getElementById("priceRange")
+    const priceOutput = document.getElementById("priceOutputter");
+    priceOutput.innerHTML = '$' + priceSlider.value;
+  
+    priceSlider.oninput = function () {
+      priceOutput.innerHTML = '$' + this.value;
+    }
+  </script>
+</main>
+
