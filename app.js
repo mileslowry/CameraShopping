@@ -1,13 +1,26 @@
 const createError = require('http-errors'),
   express = require('express'),
   path = require('path'),
-  layouts = require('express-ejs-layouts')
+  layouts = require('express-ejs-layouts'),
   cookieParser = require('cookie-parser'),
+  mongoose = require('mongoose'),
   logger = require('morgan');
 
+require('dotenv').config()
 const indexRouter = require('./routes/index');
 
-var app = express();
+mongoose.connect(
+  process.env.MONGODB_URI,
+  { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false, useCreateIndex: true }
+);
+
+const db = mongoose.connection;
+
+db.once("open", () => {
+  console.log("Successfully connected to MongoDB using Mongoose!");
+});
+
+const app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

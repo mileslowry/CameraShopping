@@ -6,24 +6,16 @@
         <div class="card-body">
           <form>
             <div class="form-group">
-              <label for="camerasOwned"><strong>About how many digital cameras have you owned?</strong><span
-                id="outputter" style="margin-left:10px; font-size: larger;"></span></label>
-              <div class="slidecontainer">
-                <span>0</span><input name="camerasOwned" type="range" min="0" max="10" value="0" class="slider"
-                  id="numCamerasOwned"><span>10+</span>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="experienceLevel"><strong>What is your current experience level with digital photography or
-                  videography?</strong></label><br />
+              <label for="experienceLevel"><strong>What is your current experience level with digital
+                  photography?</strong></label><br />
               <input type="radio" id="novice" name="experienceLevel" value="novice"><label for="novice"
                 style="margin-left:10px;">Novice</label><br />
-              <input type="radio" id="intermediate" name="experienceLevel" value="intermediate"><label for="intermediate"
-                style="margin-left:10px;">Intermediate</label><br />
+              <input type="radio" id="intermediate" name="experienceLevel" value="intermediate"><label
+                for="intermediate" style="margin-left:10px;">Intermediate</label><br />
               <input type="radio" id="advanced" name="experienceLevel" value="advanced"><label for="advanced"
                 style="margin-left:10px;">Advanced</label><br />
-              <input type="radio" id="professional" name="experienceLevel" value="professional"><label for="professional"
-                style="margin-left:10px;">Professional</label><br />
+              <input type="radio" id="professional" name="experienceLevel" value="professional"><label
+                for="professional" style="margin-left:10px;">Professional</label><br />
             </div>
             <div class="form-group">
               <label for="brandPreference"><strong>Do you have a preferred camera brand?</strong></label><br />
@@ -49,8 +41,8 @@
                 style="margin-left:10px;">Sony</label><br />
               <input type="radio" id="zeiss" name="brandPreference" value="zeiss"><label for="zeiss"
                 style="margin-left:10px;">Zeiss</label><br />
-              <input type="radio" id="noPreference" name="brandPreference" value="noPreference"><label for="noPreference"
-                style="margin-left:10px;">No preference</label><br />
+              <input type="radio" id="noPreference" name="brandPreference" value="noPreference"><label
+                for="noPreference" style="margin-left:10px;">No preference</label><br />
             </div>
             <div class="form-group">
               <label for="typePreference"><strong>Is it important to you to be able to switch out
@@ -90,28 +82,58 @@
             <div class="form-group">
               <label for="displayPreference"><strong>Where will you be displaying photos (check all that
                   apply)?</strong></label><br />
+              <input type="checkbox" id="ad" name="displayPreference" value="ad"><label for="ad"
+                style="margin-left:10px;">Ad</label><br />
+              <input type="checkbox" id="billboard-large-format" name="displayPreference"
+                value="billboard-large-format"><label for="billboard-large-format" style="margin-left:10px;">Billboard
+                or other large format</label><br />
+              <input type="checkbox" id="book-or-magazine" name="displayPreference" value="book-or-magazine"><label
+                for="book-or-magazine" style="margin-left:10px;">Book or magazine</label><br />
               <input type="checkbox" id="client" name="displayPreference" value="client"><label for="client"
-                style="margin-left:10px;">Up to client</label><br />
+                style="margin-left:10px;">Client decides</label><br />
+              <input type="checkbox" id="gallery" name="displayPreference" value="gallery"><label for="gallery"
+                style="margin-left:10px;">Gallery</label><br />
+              <input type="checkbox" id="office-or-home" name="displayPreference" value="office-or-home"><label
+                for="office-or-home" style="margin-left:10px;">Home or office</label><br />
+              <input type="checkbox" id="online-gallery" name="displayPreference" value="online-gallery"><label
+                for="online-gallery" style="margin-left:10px;">Online gallery</label><br />
               <input type="checkbox" id="social-media" name="displayPreference" value="social-media"><label
                 for="social-media" style="margin-left:10px;">Social media</label><br />
               <input type="checkbox" id="professional-website" name="displayPreference"
-                value="professional-website"><label for="professional-website" style="margin-left:10px;">Professional
-                website</label><br />
-              <input type="checkbox" id="online-gallery" name="displayPreference" value="online-gallery"><label
-                for="online-gallery" style="margin-left:10px;">Online gallery</label><br />
-              <input type="checkbox" id="ad" name="displayPreference" value="ad"><label for="ad"
-                style="margin-left:10px;">Ad</label><br />
+                value="professional-website"><label for="professional-website" style="margin-left:10px;">Website</label><br />
+              <input type="checkbox" id="noDisplayPreference" name="displayPreference"
+                value="noDisplayPreference"><label for="noDisplayPreference" style="margin-left:10px;">Not
+                sure</label><br />
+            </div>
+            <div class="form-group">
+              <label for="subjectPreference"><strong>What photography subjects are important to you? (check all that
+                  apply)?</strong></label><br />
               <input type="checkbox" id="office-or-home" name="displayPreference" value="office-or-home"><label
-                for="office-or-home" style="margin-left:10px;">Office or home</label><br />
-              <input type="checkbox" id="gallery" name="displayPreference" value="gallery"><label for="gallery"
-                style="margin-left:10px;">Gallery</label><br />
+                for="office-or-home" style="margin-left:10px;">Architecture</label><br />
+              <input type="checkbox" id="professional-website" name="displayPreference"
+                value="professional-website"><label for="professional-website"
+                style="margin-left:10px;">Cityscapes</label><br />
               <input type="checkbox" id="book-or-magazine" name="displayPreference" value="book-or-magazine"><label
-                for="book-or-magazine" style="margin-left:10px;">Book or magazine</label><br />
-              <input type="checkbox" id="billboard-large-format" name="displayPreference"
-                value="billboard-large-format"><label for="billboard-large-format" style="margin-left:10px;">Billboard or
-                other large format</label><br />
-              <input type="checkbox" id="noDisplayPreference" name="displayPreference" value="noDisplayPreference"><label
-                for="noDisplayPreference" style="margin-left:10px;">Not sure</label><br />
+                for="book-or-magazine" style="margin-left:10px;">Events</label><br />
+              <input type="checkbox" id="portraits" name="displayPreference" value="portraits"><label for="portraits"
+                style="margin-left:10px;">General</label><br />
+              <input type="checkbox" id="gallery" name="displayPreference" value="gallery"><label for="gallery"
+                style="margin-left:10px;">Interiors</label><br />
+              <input type="checkbox" id="social-media" name="displayPreference" value="social-media"><label
+                for="social-media" style="margin-left:10px;">Landscapes</label><br />
+              <input type="checkbox" id="online-gallery" name="displayPreference" value="online-gallery"><label
+                for="online-gallery" style="margin-left:10px;">Night Sky</label><br />
+              <input type="checkbox" id="ad" name="displayPreference" value="ad"><label for="ad"
+                style="margin-left:10px;">Objects</label><br />
+              <input type="checkbox" id="portraits" name="displayPreference" value="portraits"><label for="portraits"
+                style="margin-left:10px;">Portraits</label><br />
+              <input type="checkbox" id="book-or-magazine" name="displayPreference" value="book-or-magazine"><label
+                for="book-or-magazine" style="margin-left:10px;">Wildlife</label><br />
+              <input type="checkbox" id="book-or-magazine" name="displayPreference" value="book-or-magazine"><label
+                for="book-or-magazine" style="margin-left:10px;">Other, not listed</label><br />
+              <input type="checkbox" id="noDisplayPreference" name="displayPreference"
+                value="noDisplayPreference"><label for="noDisplayPreference" style="margin-left:10px;">Not
+                sure</label><br />
             </div>
           </form>
         </div>
@@ -122,7 +144,7 @@
         <h2>Recommendations</h2>
       </div>
       <div class="card shadow">
-        <% let recommendations = [{name: 'Panasonic Lumix G7', picture: 'panasonic_g7.jpg', rating: 4.3, numReviews: 203, infoLink: '/camera/:id', amazon: 'https://www.amazon.com/dp/B00X409TIC/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=ggv0zLK1DfeLbFmJlWyvAg&hsa_cr_id=8949182490001&pd_rd_plhdr=t&pd_rd_r=b9a87d04-1516-439e-8775-9165e5b7a915&pd_rd_w=FLae5&pd_rd_wg=B00kJ&ref_=sbx_be_s_sparkle_mcd_asin_0_img', sampleImages: ['one', 'two']}] %>
+        <% let recommendations = [{name: 'Panasonic Lumix G7', picture: 'panasonic_g7.jpg', rating: 4.3, numReviews: 203, infoLink: '/api/camera?name=Lumix%20DMC-G7', amazon: 'https://www.amazon.com/dp/B00X409TIC/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=ggv0zLK1DfeLbFmJlWyvAg&hsa_cr_id=8949182490001&pd_rd_plhdr=t&pd_rd_r=b9a87d04-1516-439e-8775-9165e5b7a915&pd_rd_w=FLae5&pd_rd_wg=B00kJ&ref_=sbx_be_s_sparkle_mcd_asin_0_img', sampleImages: ['one', 'two']}] %>
         <% recommendations.forEach(recommendation => { %>
         <div class="card-body">
           <div class="row">
@@ -136,41 +158,40 @@
                   Details</a></span><span>&nbsp;|&nbsp;</span><span><a href="<%= recommendation.amazon %>"
                   class="card-link">See on Amazon</a></span><br /><br />
               <% for (i = 1; i <= Math.round(recommendation.rating); i++) { %>
-                <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
               <% } %>
               <% for (i = 1; i <= (5 - Math.round(recommendation.rating)); i++) { %>
-                <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
               <% } %>
               <br /><br />
-              <button type="button" class="btn btn-warning">Check Price</button>
+              <button type="button" class="btn btn-warning" disabled>Check Price</button>
             </div>
           </div>
         </div>
         <% }) %>
       </div>
       <div class="text-right" style="margin-top: 20px;">
-        <button type="button" class="btn btn-warning">See All Recommendations</button>
+        <button type="button" class="btn btn-warning" disabled>See All Recommendations</button>
       </div>
     </div>
   </div>
-  
-  
+
+
   <script>
     const slider = document.getElementById("numCamerasOwned");
     const output = document.getElementById("outputter");
     output.innerHTML = slider.value;
-  
+
     slider.oninput = function () {
       output.innerHTML = this.value;
     }
-  
+
     const priceSlider = document.getElementById("priceRange")
     const priceOutput = document.getElementById("priceOutputter");
     priceOutput.innerHTML = '$' + priceSlider.value;
-  
+
     priceSlider.oninput = function () {
       priceOutput.innerHTML = '$' + this.value;
     }
   </script>
 </main>
-
